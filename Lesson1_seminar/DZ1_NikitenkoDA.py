@@ -56,7 +56,7 @@ n = int(input("Input the size n: "))
 m = int(input("Input the size m: "))
 k = int(input("Input the size k: "))
 
-if k % n == 0 or k % m == 0:
+if k < n * m and (k % n == 0 or k % m == 0):
     print(f"You can break off {k} slices from a chocolate bar of size {n} * {m}")
 else:
     print(f"You cannot break off {k} slices from a chocolate bar of size {n} * {m}")
